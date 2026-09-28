@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "syschime"
+version = "0.1.1"
+description = "Persistent Linux system-condition alerts with pluggable monitors and configurable warning sounds."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Razorvel" }]
+dependencies = [
+    "dbus-next>=0.2.3,<1",
+]
+
+[project.scripts]
+syschime = "syschime.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+syschime = ["assets/*.wav"]

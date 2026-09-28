@@ -1,0 +1,86 @@
+# SysChime configuration.
+# Copy to ~/.config/syschime/config.toml and edit as needed.
+
+[plugins.battery]
+enabled = true
+warning_threshold = 20
+critical_threshold = 10
+reset_threshold = 25
+poll_interval = 5
+warning_profile = "battery_warning"
+critical_profile = "battery_critical"
+
+[plugins.thermal]
+enabled = true
+poll_interval = 2
+warning_profile = "thermal_warning"
+critical_profile = "thermal_critical"
+
+[plugins.thermal.cpu]
+warning = 90
+critical = 97
+warning_duration = 20
+critical_duration = 5
+recover = 80
+
+[plugins.thermal.gpu]
+warning = 85
+critical = 92
+warning_duration = 20
+critical_duration = 5
+recover = 75
+
+[plugins.thermal.nvme]
+warning = 75
+critical = 85
+warning_duration = 30
+critical_duration = 10
+recover = 65
+
+[plugins.vpn]
+enabled = true
+poll_interval = 2
+# Empty means: remember every VPN observed while SysChime is running and
+# alert if one of those connected VPNs later disconnects.
+# To watch specific NetworkManager connection names instead:
+# watch = ["HTB", "work-vpn"]
+watch = []
+disconnect_profile = "vpn_disconnect"
+
+[alerts.profiles.battery_warning]
+severity = "warning"
+sound = "warning-medium"
+mode = "loop"
+volume = 0.85
+persistent = true
+
+[alerts.profiles.battery_critical]
+severity = "critical"
+sound = "warning-critical"
+mode = "loop"
+volume = 1.0
+persistent = true
+
+[alerts.profiles.thermal_warning]
+severity = "warning"
+sound = "warning-urgent"
+mode = "interval"
+interval_seconds = 60
+volume = 0.85
+persistent = true
+
+[alerts.profiles.thermal_critical]
+severity = "critical"
+sound = "warning-critical"
+mode = "repeat"
+repeat_count = 3
+repeat_gap_seconds = 1
+volume = 1.0
+persistent = true
+
+[alerts.profiles.vpn_disconnect]
+severity = "warning"
+sound = "disconnect"
+mode = "once"
+volume = 0.8
+persistent = true

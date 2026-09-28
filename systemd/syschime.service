@@ -1,0 +1,12 @@
+[Unit]
+Description=SysChime system-condition alert daemon
+After=graphical-session.target dbus.service
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/syschime daemon
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
