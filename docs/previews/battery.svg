@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="170" viewBox="0 0 560 170" role="img" aria-labelledby="title desc">
+  <title id="title">SysChime low battery notification preview</title>
+  <desc id="desc">A dark notification card saying Low Battery, Battery is at 19% and discharging.</desc>
+  <rect width="560" height="170" rx="20" fill="#111318"/>
+  <rect x="1" y="1" width="558" height="168" rx="19" fill="none" stroke="#343842" stroke-width="2"/>
+  <g transform="translate(28 45)">
+    <rect x="0" y="8" width="62" height="34" rx="6" fill="none" stroke="#e5e7eb" stroke-width="4"/>
+    <rect x="62" y="18" width="7" height="14" rx="2" fill="#e5e7eb"/>
+    <rect x="6" y="14" width="13" height="22" rx="2" fill="#f5c451"/>
+  </g>
+  <text x="118" y="57" fill="#9ca3af" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600">SYSCHIME · BATTERY</text>
+  <text x="118" y="91" fill="#f9fafb" font-family="Inter, system-ui, sans-serif" font-size="25" font-weight="700">Low Battery</text>
+  <text x="118" y="122" fill="#d1d5db" font-family="Inter, system-ui, sans-serif" font-size="18">Battery is at 19% and discharging.</text>
+  <text x="118" y="148" fill="#8b909a" font-family="Inter, system-ui, sans-serif" font-size="14">warning-medium · loop until acknowledged or charging</text>
+</svg>

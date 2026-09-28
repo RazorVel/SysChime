@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="170" viewBox="0 0 560 170" role="img" aria-labelledby="title desc">
+  <title id="title">SysChime VPN disconnect notification preview</title>
+  <desc id="desc">A dark notification card saying VPN Disconnected, VPN HTB disconnected.</desc>
+  <rect width="560" height="170" rx="20" fill="#111318"/>
+  <rect x="1" y="1" width="558" height="168" rx="19" fill="none" stroke="#343842" stroke-width="2"/>
+  <g transform="translate(30 39)">
+    <path d="M31 0 L58 10 V31 C58 51 46 65 31 73 C16 65 4 51 4 31 V10 Z" fill="none" stroke="#e5e7eb" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M18 27 L44 47 M44 27 L18 47" stroke="#7cc8ff" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="118" y="57" fill="#9ca3af" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600">SYSCHIME · VPN</text>
+  <text x="118" y="91" fill="#f9fafb" font-family="Inter, system-ui, sans-serif" font-size="25" font-weight="700">VPN Disconnected</text>
+  <text x="118" y="122" fill="#d1d5db" font-family="Inter, system-ui, sans-serif" font-size="18">VPN 'HTB' disconnected.</text>
+  <text x="118" y="148" fill="#8b909a" font-family="Inter, system-ui, sans-serif" font-size="14">disconnect · one-shot alert</text>
+</svg>

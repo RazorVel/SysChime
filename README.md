@@ -10,6 +10,31 @@ Current built-in plugins:
 
 The alert engine is independent from the plugins. Each alert profile can use a different ringtone and sound behavior: `once`, `repeat`, `loop`, `interval`, or `none`.
 
+
+## Preview
+
+> Illustrative previews. The actual notification appearance follows your desktop notification daemon and theme.
+
+<p align="center">
+  <img src="docs/previews/battery.svg" width="32%" alt="Low battery alert preview">
+  <img src="docs/previews/thermal.svg" width="32%" alt="High CPU temperature alert preview">
+  <img src="docs/previews/vpn.svg" width="32%" alt="VPN disconnected alert preview">
+</p>
+
+Typical flow:
+
+```text
+system condition changes
+        ↓
+plugin evaluates state
+        ↓
+SysChime raises an alert
+        ↓
+desktop notification + configured warning sound
+        ↓
+acknowledge or condition recovers
+```
+
 ## Requirements
 
 - Linux with Python 3.11+
@@ -178,6 +203,11 @@ python tools/generate_sounds.py
 
 ```text
 syschime/
+├── docs/
+│   └── previews/
+│       ├── battery.svg
+│       ├── thermal.svg
+│       └── vpn.svg
 ├── config.example.toml
 ├── pyproject.toml
 ├── README.md

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="170" viewBox="0 0 560 170" role="img" aria-labelledby="title desc">
+  <title id="title">SysChime thermal notification preview</title>
+  <desc id="desc">A dark notification card saying High CPU Temperature, Package id 0: 92.4 degrees Celsius.</desc>
+  <rect width="560" height="170" rx="20" fill="#111318"/>
+  <rect x="1" y="1" width="558" height="168" rx="19" fill="none" stroke="#343842" stroke-width="2"/>
+  <g transform="translate(35 37)">
+    <rect x="17" y="0" width="18" height="57" rx="9" fill="none" stroke="#e5e7eb" stroke-width="4"/>
+    <circle cx="26" cy="64" r="17" fill="none" stroke="#e5e7eb" stroke-width="4"/>
+    <rect x="22" y="18" width="8" height="45" rx="4" fill="#ef6b62"/>
+    <circle cx="26" cy="64" r="10" fill="#ef6b62"/>
+  </g>
+  <text x="118" y="57" fill="#9ca3af" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600">SYSCHIME · THERMAL</text>
+  <text x="118" y="91" fill="#f9fafb" font-family="Inter, system-ui, sans-serif" font-size="25" font-weight="700">High CPU Temperature</text>
+  <text x="118" y="122" fill="#d1d5db" font-family="Inter, system-ui, sans-serif" font-size="18">Package id 0: 92.4°C</text>
+  <text x="118" y="148" fill="#8b909a" font-family="Inter, system-ui, sans-serif" font-size="14">warning-urgent · periodic while condition remains active</text>
+</svg>
