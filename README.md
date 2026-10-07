@@ -1,5 +1,9 @@
 # SysChime
 
+<p align="center">
+  <img src="docs/assets/logo.png" alt="SysChime logo" width="360">
+</p>
+
 SysChime is a small Linux user daemon that turns important system conditions into persistent desktop alerts with configurable warning sounds.
 
 Current built-in plugins:
